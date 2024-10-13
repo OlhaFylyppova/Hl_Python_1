@@ -6,15 +6,15 @@
 # Input: Два рядки (String). Output: Int or None
 
 def second_index(text, some_str):
-  first_string = text
-  second_string = some_str
-  first_find = None
-  second_find = None
-  if first_string.count(second_string) > 1:
-    first_find = first_string.index(second_string)
-    second_find = first_string.find(second_string, first_find + 1)
-  print(f"result: second index {second_find}")
-  return second_find
+    first_string = text
+    second_string = some_str
+    first_find = None
+    second_find = None
+    if first_string.count(second_string) > 1:
+        first_find = first_string.index(second_string)
+        second_find = first_string.find(second_string, first_find + 1)
+    print(f"result: second index {second_find}")
+    return second_find
 
 assert second_index("sims", "s") == 3, 'Test1'
 assert second_index("find the river", "e") == 12, 'Test2'

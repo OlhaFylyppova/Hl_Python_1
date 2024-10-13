@@ -13,7 +13,7 @@ def second_index(text, some_str):
     if first_string.count(second_string) > 1:
         first_find = first_string.index(second_string)
         second_find = first_string.find(second_string, first_find + 1)
-    print(f"result: second index {second_find}")
+    print(f"result: second index is {second_find}")
     return second_find
 
 assert second_index("sims", "s") == 3, 'Test1'
